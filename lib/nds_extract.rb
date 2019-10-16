@@ -24,14 +24,16 @@ def directors_totals(nds)
   index_1 = 0
   while index_1 < nds.count do
     current_name = nds[index_1][:name]
-    temp_val = 0
+    result[current_name] = 0
+    #temp_val = 0
     index_2 = 0
     while index_2 < nds[index_1][:movies].count do
-      temp_val_2 = nds[index_1][:movies][index_2][:worldwide_gross]
-      temp_val = temp_val_2 + temp_val
+      result[current_name] += nds[index_1][:movies][index_2][:worldwide_gross]
+      #temp_val_2 = nds[index_1][:movies][index_2][:worldwide_gross]
+      #temp_val = temp_val_2 + temp_val
       index_2 += 1
     end
-    result[current_name] = temp_val
+    #result[current_name] = temp_val
     index_1 += 1
   end
   nil
