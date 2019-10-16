@@ -32,7 +32,7 @@ def directors_totals(nds)
       index_2 += 1
     end
     puts temp_val
-    result[:current_name] = temp_val
+    result[:current_name] = temp_val.to_s
     index_1 += 1
   end
   nil
