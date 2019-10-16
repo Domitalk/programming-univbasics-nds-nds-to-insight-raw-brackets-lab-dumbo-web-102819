@@ -31,6 +31,7 @@ def directors_totals(nds)
       temp_val += temp_val_2
       index_2 += 1
     end
+    puts temp_val
     result[:current_name] = temp_val
     index_1 += 1
   end
