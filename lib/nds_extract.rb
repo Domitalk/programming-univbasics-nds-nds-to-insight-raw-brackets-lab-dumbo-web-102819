@@ -22,18 +22,8 @@ def directors_totals(nds)
   # directors_database[0][:movies][0][:worldwide_gross]
   # directors_database[0] director [:movies][0] each movie [:worldwide_gross] add
 
-  index_1 = 0
-  while index_1 < directors_database.count do
-    current_name = directors_database[index_1][:name]
-    result[index_1] = {current_name => 0}
-    index_2 = 0
-    while index_2 < directors_database[index_1][:movies].count do
-      result[current_name] += directors_database[index_1][:movies][index_2][:worldwide_gross]
-      index_2 += 1
-    end
-    index_1 += 1
-  end
+
   nil
-  
+
   puts directors_database[0]
 end
