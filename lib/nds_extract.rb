@@ -29,6 +29,7 @@ def directors_totals(nds)
     index_2 = 0
     while index_2 < nds[index_1][:movies].count do
       temp_val += nds[index_1][:movies][index_2][:worldwide_gross]
+      puts nds[index_1][:movies][index_2]
       index_2 += 1
     end
     result[:current_name] = temp_val
