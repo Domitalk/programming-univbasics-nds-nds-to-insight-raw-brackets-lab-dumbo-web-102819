@@ -24,7 +24,8 @@ def directors_totals(nds)
 
   index_1 = 0
   while index_1 < directors_databse.count do
-    result[index_1] = directors_database[index_1][:name]
+    current_name = directors_database[index_1][:name]
+    result[index_1] = {current_name => 0}
     index_2 = 0
     while index_2 < directors_database[index_1][:movies].count do
 
