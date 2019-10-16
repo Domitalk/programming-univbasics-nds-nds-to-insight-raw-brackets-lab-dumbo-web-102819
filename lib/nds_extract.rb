@@ -25,6 +25,7 @@ def directors_totals(nds)
   index_1 = 0
   while index_1 < nds.count do
     current_name = nds[index_1][:name]
+    puts current_name
     result[index_1] = {current_name => 0}
     index_2 = 0
     while index_2 < nds[index_1][:movies].count do
