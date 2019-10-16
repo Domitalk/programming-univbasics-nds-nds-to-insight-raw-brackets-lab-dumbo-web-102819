@@ -29,7 +29,6 @@ def directors_totals(nds)
     while index_2 < blarg[index_1][:movies].count do
       temp_val_2 = blarg[index_1][:movies][index_2][:worldwide_gross]
       temp_val += temp_val_2
-      puts blarg[index_1][:movies][index_2][:worldwide_gross]
       index_2 += 1
     end
     result[:current_name] = temp_val
