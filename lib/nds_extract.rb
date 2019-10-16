@@ -34,6 +34,6 @@ def directors_totals(nds)
     index_1 += 1
   end
   nil
-  result
+  
   puts directors_database[0]
 end
