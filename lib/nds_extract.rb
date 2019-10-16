@@ -19,6 +19,6 @@ def directors_totals(nds)
   #
   #
   # Be sure to return the result at the end!
-  puts directors_database[0][:movies]
+  puts directors_database[0][:movies][0]
   nil
 end
