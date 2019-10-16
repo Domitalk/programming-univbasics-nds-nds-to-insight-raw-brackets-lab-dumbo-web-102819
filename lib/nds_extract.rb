@@ -25,5 +25,5 @@ def directors_totals(nds)
 
   nil
 
-  puts directors_database[0][:movies]
+  puts directors_database[0][:movies][0]
 end
