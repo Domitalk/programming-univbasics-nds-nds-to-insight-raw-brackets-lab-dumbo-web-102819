@@ -19,6 +19,6 @@ def directors_totals(nds)
   #
   #
   # Be sure to return the result at the end!
-  puts directors_database[0][0]
+  puts directors_database[0][:name]
   nil
 end
