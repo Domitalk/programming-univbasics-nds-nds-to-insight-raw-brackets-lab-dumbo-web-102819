@@ -2,7 +2,7 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 
 def directors_totals(nds)
-  pp directors_database
+
   # Remember, it's always OK to pretty print what you get *in* to make sure
   # that you know what you're starting with!
   #
@@ -19,5 +19,6 @@ def directors_totals(nds)
   #
   #
   # Be sure to return the result at the end!
+  puts directors_total[0][:name]
   nil
 end
